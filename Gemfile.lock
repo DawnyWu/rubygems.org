@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/Shopify/statsd-instrument.git
+  revision: 3566c3c687f89b65680ca8491283b8e1d64455df
+  ref: master
+  specs:
+    statsd-instrument (2.0.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -216,7 +223,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    statsd-instrument (2.0.5)
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -289,7 +295,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   shoulda
   sinatra
-  statsd-instrument
+  statsd-instrument!
   timecop
   uglifier (>= 1.0.3)
   unicorn
