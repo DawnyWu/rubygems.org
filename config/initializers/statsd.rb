@@ -9,3 +9,7 @@ Notifier.statsd_count_success :perform, 'Webhook.perform'
 Indexer.extend StatsD::Instrument
 Indexer.statsd_count_success :perform, 'Indexer.perform'
 Indexer.statsd_measure :perform, 'Indexer.perform'
+
+SearchesController.extend StatsD::Instrument
+SearchesController.statsd_count :show, 'SearchesController.show'
+SearchesController.statsd_measure :show, 'SearchesController.show'
