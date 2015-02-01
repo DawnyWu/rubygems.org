@@ -1,5 +1,3 @@
-StatsD.default_sample_rate = 0.1
-
 Redis::Client.extend StatsD::Instrument
 Redis::Client.statsd_measure :process, 'Redis.Client.process.measure', 0.001
 
